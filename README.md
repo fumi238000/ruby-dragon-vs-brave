@@ -19,10 +19,10 @@
 - 結果の判定
 - retry
 
-###　クラス
+### クラス
 - Status(能力値）
 - GameContoller(ゲームの進行)
--- retryメソッド
+ - retryメソッド
 - Judge（結果の判定）
 - 
 
