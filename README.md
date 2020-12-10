@@ -21,10 +21,13 @@
 
 ### クラス
 - Status(能力値）
+ランダムで能力値を決定（HP,ATTACK,DEFENSE,SPEED)
 - GameContoller(ゲームの進行)
- - retryメソッド
+先攻後攻の決定（speedの値が高いプレイヤーが先に攻撃）
+ダメージ計算
+retryメソッド
 - Judge（結果の判定）
-- 
+ 
 
 
 ### Gem
