@@ -21,11 +21,11 @@
 
 ### クラス
 - Status(能力値）
-ランダムで能力値を決定（HP,ATTACK,DEFENSE,SPEED)
+1.ランダムで能力値を決定（HP,ATTACK,DEFENSE,SPEED)
 - GameContoller(ゲームの進行)
-先攻後攻の決定（speedの値が高いプレイヤーが先に攻撃）
-ダメージ計算
-retryメソッド
+1.先攻後攻の決定（speedの値が高いプレイヤーが先に攻撃）
+2.ダメージ計算
+3.retryメソッド
 - Judge（結果の判定）
  
 
