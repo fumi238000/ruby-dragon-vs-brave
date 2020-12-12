@@ -8,6 +8,22 @@
 - 片方のHPが0になった時点で攻撃を終了させること
 
 
+### フローチャート
+<img width="388" alt="スクリーンショット 2020-12-10 19 01 08" src="https://user-images.githubusercontent.com/64491435/101757414-79961700-3b1a-11eb-9f30-341b7000e8ef.png">
+
+
+### 機能
+- 能力値決定
+- 先攻後攻の決定
+- ダメージ計算
+- 結果の判定
+- retry
+
+### クラス
+- Status(能力値） => ランダムで能力値を決定（HP,ATTACK,DEFENSE,SPEED)
+- GameContoller(ゲームの進行) => 1.先攻後攻の決定（speedの値が高いプレイヤーが先に攻撃） 2.ダメージ計算 3.retryメソッド
+- Judge（結果の判定）
+ 
 ### Gem
 - pry
 - rspec
