@@ -1,6 +1,5 @@
-#能力値を決定するクラス
 
-class Status
+class Player
   attr_accessor :hp, :attack, :defense, :speed
 
   # 初期をセットする
@@ -12,7 +11,7 @@ class Status
     @speed = params[:speed]
   end
 
-def start_status(params)
+def status(params)
   puts <<~TEXT
     
     NAME:#{@name}
@@ -23,12 +22,6 @@ def start_status(params)
 
   TEXT
 end
-
-
-def decide_status
-    
-  end
-
 
 
 end

@@ -1,21 +1,50 @@
-require './status'
+require './player'
+require './brave'
+require './monster'
 require 'pry'
 
 
-START_STATUS = {
-  name: "yuki",
-  hp: 100, 
-  attack: 100,
-  defense: 100,
-  speed: 100
-}
-
 # 能力値の決定
-status = Status.new(START_STATUS)
+brave = Brave.new(Brave::BRAVE_STATUS)
+monster = Monster.new(Monster::MONSTAR_STATUS)
   
-status.start_status(status)
+# 能力の表示
+brave.status(brave)
+monster.status(monster)
+
+
 
 # 先攻・後攻の決定
+# puts "勇者のSPEED(スピードの表示) モンスターのSPEED"
+# if brave 
+
+puts <<~TEXT
+  
+----------------------------------------
+  勇者のSPEED：#{brave.speed}
+  モンスターのSPEED ：#{monster.speed}
+----------------------------------------
+
+TEXT
+
+if brave.speed < monster.speed
+  #最初に攻撃する変数にmonsterを追加、後者にbraveを追加
+  puts "モンスターが先攻！"
+  puts "モンスターの攻撃メソッド"
+else 
+  #最初に攻撃する変数にbraveを追加、後者にmonsterを追加
+  puts "勇者が先攻！"
+  puts "勇者の攻撃メソッド"
+end
+
+
+
+
+# while true
+#   brave.attack
+#   monster.attack
+# end
+
 
 # 攻撃メソッドの呼び出し
 ## 攻撃の表示
